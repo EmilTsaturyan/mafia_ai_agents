@@ -14,7 +14,7 @@ from schemas.player import Player, PlayerRole
 from schemas.phase import PhaseType
 
 
-api_key = "AIzaSyCwTrDYAPns5Cgw3_fj-7cqKlQ4QQEpUUg"
+api_key = os.getenv("GOOGLE_API_KEY")
 os.environ["GOOGLE_API_KEY"] = api_key
 
 
